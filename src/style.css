@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
 * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-autospace: normal;
-	text-spacing-trim: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-autospace: normal;
+  text-spacing-trim: normal;
 }
 
 body {
-	font-family: Charter, "Times New Roman", serif;
-	margin: 0 auto;
+  font-family: Charter, "Times New Roman", serif;
+  margin: 0 auto;
   max-width: 40em;
-	line-height: 1.6;
+  padding: 1em;
 }
 
 mark {
@@ -20,11 +20,12 @@ mark {
 
 a,
 a:visited {
-  color:teal;
-  text-decoration:none
+  color: teal;
+  text-decoration: none;
 }
+
 a:hover {
-  color:teal;
-  text-underline-position:under;
-  text-decoration:underline 1px
+  color: teal;
+  text-underline-position: under;
+  text-decoration: underline 1px;
 }
