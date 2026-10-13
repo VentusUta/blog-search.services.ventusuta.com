@@ -1,5 +1,6 @@
 {
   "name": "ventus-uta-blog-search",
+  "packageManager": "pnpm@12.9.1",
   "private": true,
   "type": "module",
   "scripts": {
