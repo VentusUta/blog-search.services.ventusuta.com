@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>日志搜索</title>
+  </head>
+  <body>
+    <h1>日志搜索</h1>
+    <a href="https://ventusuta.com">←返回“网络日志”</a>
+    <form>
+      <h2>搜索</h2>
+      <p>
+        <input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="输入关键词……">
+      </p>
+      <h2>选项</h2>
+      <fieldset>
+        <legend>范围</legend>
+        <label><input type="radio" name="scope" value="both" checked>内容与标题</label>
+        <label><input type="radio" name="scope" value="content">仅内容</label>
+        <label><input type="radio" name="scope" value="title">仅标题</label>
+      </fieldset>
+      <fieldset>
+        <legend>语言</legend>
+        <label><input type="radio" name="lang" value="" checked>不限语言</label>
+        <label><input type="radio" name="lang" value="zh-CN">zh-CN</label>
+        <label><input type="radio" name="lang" value="en">en</label>
+      </fieldset>
+      <fieldset>
+        <legend>日期</legend>
+        <div>
+          <label><input type="radio" name="date" value="any" checked>不限日期</label>
+        </div>
+        <div>
+          <input type="radio" name="date" id="date-range" value="range">
+          <input data-part maxlength="4" size="4" placeholder="YYYY" inputmode="numeric" autocomplete="off">-<input data-part maxlength="2" size="2" placeholder="MM" inputmode="numeric" autocomplete="off">-<input data-part maxlength="2" size="2" placeholder="DD" inputmode="numeric" autocomplete="off"> 至 <input data-part maxlength="4" size="4" placeholder="YYYY" inputmode="numeric" autocomplete="off">-<input data-part maxlength="2" size="2" placeholder="MM" inputmode="numeric" autocomplete="off">-<input data-part maxlength="2" size="2" placeholder="DD" inputmode="numeric" autocomplete="off">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>顺序</legend>
+        <label><input type="radio" name="order" value="new" checked>从新到旧</label>
+        <label><input type="radio" name="order" value="old">从旧到新</label>
+      </fieldset>
+    </form>
+    <h2>结果</h2>
+    <main id="results"></main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
